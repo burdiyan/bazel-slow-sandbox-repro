@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/crawshaw/sqlite
+	branch = master
+	commit = 2cdb5c1a86a11171f99b8b9c44a3050a72258cf8
+	parent = a74c86f4995958f780e0f67899a2a0a5985bc7fe
+	method = merge
+	cmdver = 0.4.3

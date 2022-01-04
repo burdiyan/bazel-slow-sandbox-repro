@@ -1,0 +1,17 @@
+genrule(
+    name = "build",
+    srcs = [
+        "//app:srcs",
+        "//third_party:sqlite",
+        "go.mod",
+        "go.sum",
+    ] + glob(["*.go"]),
+    outs = ["app"],
+    cmd = """
+export CGO_ENABLED=1
+
+export HOME="$$(eval echo ~$$(whoami))"
+go build -o $@ .
+""",
+    executable = True,
+)
